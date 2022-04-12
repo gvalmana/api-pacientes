@@ -5,17 +5,17 @@ namespace Database\Seeders;
 use App\Models\Paciente;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\App;
 
-class DatabaseSeeder extends Seeder
+class PacienteSeeder extends Seeder
 {
     /**
-     * Seed the application's database.
+     * Run the database seeds.
      *
      * @return void
      */
     public function run()
     {
-        // \App\Models\User::factory(10)->create();
-        Paciente::factory(100)->create();
+        
     }
 }
