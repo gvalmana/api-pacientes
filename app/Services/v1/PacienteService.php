@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Services\api;
+namespace App\Services\v1;
 
-use App\Models\Paciente;
+use App\Models\v1\Paciente;
 use App\Services\Services;
 
 class PacienteService extends Services

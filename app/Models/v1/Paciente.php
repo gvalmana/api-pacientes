@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Models;
+namespace App\Models\v1;
 
+use App\Models\BaseModel;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Database\Eloquent\Model;
 
 class Paciente extends BaseModel
 {

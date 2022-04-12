@@ -1,15 +1,11 @@
 <?php
 
-namespace App\Http\Controllers\api;
+namespace App\Http\Controllers\api\v1;
 
-use App\Http\Controllers\Controller;
 use App\Http\Controllers\RestController;
-use App\Http\Requests\api\ActualizarPacienteRequest;
-use App\Http\Requests\api\GuardarPacienteRequest;
-use App\Http\Resources\PacienteResource;
-use App\Models\Paciente;
-use App\Services\api\PacienteService;
-use Illuminate\Http\Request;
+use App\Http\Resources\v1\PacienteResource;
+use App\Models\v1\Paciente;
+use App\Services\v1\PacienteService;
 
 class PacienteController extends RestController
 {
@@ -21,7 +17,7 @@ class PacienteController extends RestController
         $classnamespace= Paciente::class;
         $classnamespaceservice=PacienteService::class;
         $resource = PacienteResource::class;
-        $this->modelClass=new $classnamespace ;
+        $this->modelClass=new $classnamespace;
         $this->service= new $classnamespaceservice(new $classnamespace);
         $this->resource = $resource;
     }
