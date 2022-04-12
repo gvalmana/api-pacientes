@@ -47,8 +47,6 @@ class RestController extends BaseController
         array_key_exists('pagination', $request->request->all()) ? $parameters['pagination'] = $request['pagination'] : $parameters['pagination'] = null;
         array_key_exists('orderby', $request->request->all()) ? $parameters['orderby'] = $request['orderby'] : $parameters['orderby'] = null;
         array_key_exists('oper', $request->request->all()) ? $parameters['oper'] = $request['oper'] : $parameters['oper'] = null;
-        array_key_exists('as_resource', $request->request->all()) ? $parameters['as_resource'] = $request['as_resource'] : $parameters['as_resource'] = null;
-
         return $parameters;
     }
 
@@ -56,9 +54,6 @@ class RestController extends BaseController
     {
         $params = $this->process_request($request);
         $result = $this->service->list_all($params);
-        if ($request['as_resource']!=null && $request['as_resource']== true) {
-            return $this->resource::collection($result);
-        }
         return $result;
     }
 
@@ -125,10 +120,7 @@ class RestController extends BaseController
     public function show(Request $request, $id)
     {
         $params = $this->process_request($request);
-        $result = $this->service->show($params, $id);
-        if ($request['as_resource']!=null && $request['as_resource']== true) {
-            return new $this->resource($result);
-        }        
+        $result = $this->service->show($params, $id);       
         return $result;
     }
 

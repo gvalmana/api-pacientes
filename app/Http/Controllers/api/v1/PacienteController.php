@@ -16,10 +16,8 @@ class PacienteController extends RestController
     {
         $classnamespace= Paciente::class;
         $classnamespaceservice=PacienteService::class;
-        $resource = PacienteResource::class;
         $this->modelClass=new $classnamespace;
         $this->service= new $classnamespaceservice(new $classnamespace);
-        $this->resource = $resource;
     }
 
 }
