@@ -2,10 +2,9 @@
 
 namespace App\Http\Controllers\api\v1;
 
-use App\Http\Controllers\RestController;
-use App\Http\Resources\v1\PacienteResource;
 use App\Models\v1\Paciente;
 use App\Services\v1\PacienteService;
+use CrudApiRestfull\controllers\RestController;
 
 class PacienteController extends RestController
 {

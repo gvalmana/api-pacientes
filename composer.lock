@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "12524947d8c752f84bc21aaaede06bfa",
+    "content-hash": "841ee76cacecae368122397597aeb4a9",
     "packages": [
         {
             "name": "brick/math",
@@ -892,6 +892,49 @@
                 }
             ],
             "time": "2022-03-20T21:55:58+00:00"
+        },
+        {
+            "name": "gvalmana/crud-api-laravel",
+            "version": "v1.0.1-alpha",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/gvalmana/crud-api-laravel.git",
+                "reference": "b8db73f89e9d131f74bfbd76eb485223a017cdf1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/gvalmana/crud-api-laravel/zipball/b8db73f89e9d131f74bfbd76eb485223a017cdf1",
+                "reference": "b8db73f89e9d131f74bfbd76eb485223a017cdf1",
+                "shasum": ""
+            },
+            "require": {
+                "php": "~7.3|~8.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "\\CrudApiRestfull\\": "src/",
+                    "\\CrudApiRestfull\\models\\": "src/models",
+                    "\\CrudApiRestfull\\services\\": "src/services",
+                    "\\CrudApiRestfull\\controllers\\": "src/controllers"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Gustavo Valmaña Villalonga",
+                    "email": "gustavo.shotokai@gmail.com"
+                }
+            ],
+            "description": "Libreria para CRUD en API de Laravel",
+            "support": {
+                "issues": "https://github.com/gvalmana/crud-api-laravel/issues",
+                "source": "https://github.com/gvalmana/crud-api-laravel/tree/v1.0.1-alpha"
+            },
+            "time": "2022-04-13T15:49:02+00:00"
         },
         {
             "name": "laravel/framework",
@@ -7734,7 +7777,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "gvalmana/crud-api-laravel": 15
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {

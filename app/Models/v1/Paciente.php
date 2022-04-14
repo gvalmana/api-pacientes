@@ -2,10 +2,10 @@
 
 namespace App\Models\v1;
 
-use App\Models\BaseModel;
+use CrudApiRestfull\models\RestModel;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
-class Paciente extends BaseModel
+class Paciente extends RestModel
 {
     use HasFactory;
 
