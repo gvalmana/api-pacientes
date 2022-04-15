@@ -2,7 +2,7 @@
 
 namespace App\Models\v1;
 
-use CrudApiRestfull\models\RestModel;
+use CrudApiRestfull\Models\RestModel;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class Paciente extends RestModel

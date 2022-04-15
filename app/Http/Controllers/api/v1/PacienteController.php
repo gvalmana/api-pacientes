@@ -4,7 +4,7 @@ namespace App\Http\Controllers\api\v1;
 
 use App\Models\v1\Paciente;
 use App\Services\v1\PacienteService;
-use CrudApiRestfull\controllers\RestController;
+use CrudApiRestfull\Controllers\RestController;
 
 class PacienteController extends RestController
 {

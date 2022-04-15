@@ -895,16 +895,16 @@
         },
         {
             "name": "gvalmana/crud-api-laravel",
-            "version": "v1.0.1-alpha",
+            "version": "v1.0.4-alpha",
             "source": {
                 "type": "git",
                 "url": "https://github.com/gvalmana/crud-api-laravel.git",
-                "reference": "b8db73f89e9d131f74bfbd76eb485223a017cdf1"
+                "reference": "582445ceaa6c8bf13e85980ed7b92f67fcfce998"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/gvalmana/crud-api-laravel/zipball/b8db73f89e9d131f74bfbd76eb485223a017cdf1",
-                "reference": "b8db73f89e9d131f74bfbd76eb485223a017cdf1",
+                "url": "https://api.github.com/repos/gvalmana/crud-api-laravel/zipball/582445ceaa6c8bf13e85980ed7b92f67fcfce998",
+                "reference": "582445ceaa6c8bf13e85980ed7b92f67fcfce998",
                 "shasum": ""
             },
             "require": {
@@ -913,10 +913,10 @@
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "\\CrudApiRestfull\\": "src/",
-                    "\\CrudApiRestfull\\models\\": "src/models",
-                    "\\CrudApiRestfull\\services\\": "src/services",
-                    "\\CrudApiRestfull\\controllers\\": "src/controllers"
+                    "CrudApiRestfull\\": "src/",
+                    "CrudApiRestfull\\Models\\": "src/Models",
+                    "CrudApiRestfull\\Services\\": "src/Services",
+                    "CrudApiRestfull\\Controllers\\": "src/Controllers"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -932,9 +932,9 @@
             "description": "Libreria para CRUD en API de Laravel",
             "support": {
                 "issues": "https://github.com/gvalmana/crud-api-laravel/issues",
-                "source": "https://github.com/gvalmana/crud-api-laravel/tree/v1.0.1-alpha"
+                "source": "https://github.com/gvalmana/crud-api-laravel/tree/v1.0.4-alpha"
             },
-            "time": "2022-04-13T15:49:02+00:00"
+            "time": "2022-04-15T00:04:27+00:00"
         },
         {
             "name": "laravel/framework",

@@ -3,7 +3,7 @@
 namespace App\Services\v1;
 
 use App\Models\v1\Paciente;
-use CrudApiRestfull\services\Services;
+use CrudApiRestfull\Services\Services;
 
 class PacienteService extends Services
 {
