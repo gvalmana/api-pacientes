@@ -2,6 +2,7 @@
 
 namespace App\Providers\v1;
 
+use App\Services\v1\PacienteService;
 use Illuminate\Support\ServiceProvider;
 
 class PacienteServiceProvider extends ServiceProvider
@@ -23,6 +24,9 @@ class PacienteServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        $this->app->bind(PacienteService::class, function ($app)
+        {
+            return new PacienteService();
+        });
     }
 }

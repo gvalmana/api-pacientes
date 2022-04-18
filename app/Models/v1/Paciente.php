@@ -92,8 +92,28 @@ class Paciente extends RestModel
     protected function rules($scenario='create')
     {
         $rules = [
-            'create' => [],
-            'update' => []
+            'create' => [
+                'id' => 'required|unique:pacientes,id',
+                'nombres' => 'required',
+                'apellidos' => 'required',
+                'edad' => 'required',
+                'dni' => 'required|unique:pacientes,dni',
+                'tipo_sangre' => 'required',
+                'telefono' => 'required',
+                'correo'=> 'required|unique:pacientes,correo',
+                'direccion'=> 'required',
+            ],
+            'update' => [
+                'id' => 'required|unique:pacientes,id,'.$this->id,
+                'nombres' => 'required',
+                'apellidos' => 'required',
+                'edad' => 'required',
+                'dni' => 'required|unique:pacientes,dni,'.$this->id,
+                'tipo_sangre' => 'required',
+                'telefono' => 'required',
+                'correo'=> 'required|unique:pacientes,correo,'.$this->id,
+                'direccion'=> 'required',
+            ]
         ];
         if(!isset($rules[$scenario]))
             throw new \Exception('Scenario '.$scenario.' not exist');

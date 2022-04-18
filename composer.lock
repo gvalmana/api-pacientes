@@ -1038,16 +1038,16 @@
         },
         {
             "name": "gvalmana/crud-api-laravel",
-            "version": "v1.0.7-alpha",
+            "version": "v1.0.8-alpha",
             "source": {
                 "type": "git",
                 "url": "https://github.com/gvalmana/crud-api-laravel.git",
-                "reference": "3d6bc03b59babeeb38c4f0a2bf673c2262b054a9"
+                "reference": "33d15f36474b171309e33a8793e6611f7db11219"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/gvalmana/crud-api-laravel/zipball/3d6bc03b59babeeb38c4f0a2bf673c2262b054a9",
-                "reference": "3d6bc03b59babeeb38c4f0a2bf673c2262b054a9",
+                "url": "https://api.github.com/repos/gvalmana/crud-api-laravel/zipball/33d15f36474b171309e33a8793e6611f7db11219",
+                "reference": "33d15f36474b171309e33a8793e6611f7db11219",
                 "shasum": ""
             },
             "require": {
@@ -1075,9 +1075,9 @@
             "description": "Libreria para CRUD en API de Laravel",
             "support": {
                 "issues": "https://github.com/gvalmana/crud-api-laravel/issues",
-                "source": "https://github.com/gvalmana/crud-api-laravel/tree/v1.0.7-alpha"
+                "source": "https://github.com/gvalmana/crud-api-laravel/tree/v1.0.8-alpha"
             },
-            "time": "2022-04-18T00:16:42+00:00"
+            "time": "2022-04-18T01:39:08+00:00"
         },
         {
             "name": "laravel/framework",
