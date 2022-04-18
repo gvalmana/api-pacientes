@@ -2,28 +2,22 @@
 
 namespace App\Http\Controllers\api\v1;
 
+use App\Models\v1\Paciente;
+use App\Services\v1\PacienteService;
 use Barryvdh\DomPDF\Facade\Pdf;
+use CrudApiRestfull\Controllers\RestController;
 use Illuminate\Http\Request;
 
-class PacienteController extends \CrudApiRestfull\Controllers\RestController
+class PacienteController extends RestController
 {
     /**
      *  PacienteController constructor.
      */
     public function __construct()
     {
-        $classnamespace= \App\Models\v1\Paciente::class;
-        $classnamespaceservice= \App\Services\v1\PacienteService::class;
+        $classnamespace= Paciente::class;
+        $classnamespaceservice= PacienteService::class;
         $this->modelClass=new $classnamespace;
         $this->service= new $classnamespaceservice(new $classnamespace);
-    }
-
-    public function report(Request $request)
-    {
-        $params = $this->process_request($request);
-        $result = $this->service->list_all($params);
-        view()->share('report',['result'=>$result]);
-        $pdf = Pdf::loadView('report',['result'=>$result]);
-        return $pdf->download('archivo-pdf.pdf');
     }
 }
