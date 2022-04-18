@@ -20,3 +20,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::apiResource('v1/pacientes', PacienteController::class);
+Route::get('v1/pacientes/reportes/download', [PacienteController::class,'report']);

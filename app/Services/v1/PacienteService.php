@@ -3,9 +3,8 @@
 namespace App\Services\v1;
 
 use App\Models\v1\Paciente;
-use CrudApiRestfull\Services\Services;
 
-class PacienteService extends Services
+class PacienteService extends \CrudApiRestfull\Services\Services
 {
     public function __construct()
     {
