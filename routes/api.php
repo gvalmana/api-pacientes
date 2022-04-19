@@ -20,3 +20,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::apiResource('v1/pacientes', PacienteController::class);
+Route::post('v1/pacientes/validate',[PacienteController::class,'validate_model']);
+Route::post('v1/pacientes/update_multiple',[PacienteController::class,'update_multiple']);
