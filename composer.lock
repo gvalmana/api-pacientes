@@ -1044,12 +1044,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/gvalmana/crud-api-laravel.git",
-                "reference": "4e286c2e590f3f5c3be8cc80452adbd6d97231bf"
+                "reference": "16a1e110db53f51e013b72277fceb6f383793bb1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/gvalmana/crud-api-laravel/zipball/4e286c2e590f3f5c3be8cc80452adbd6d97231bf",
-                "reference": "4e286c2e590f3f5c3be8cc80452adbd6d97231bf",
+                "url": "https://api.github.com/repos/gvalmana/crud-api-laravel/zipball/16a1e110db53f51e013b72277fceb6f383793bb1",
+                "reference": "16a1e110db53f51e013b72277fceb6f383793bb1",
                 "shasum": ""
             },
             "require": {
@@ -1060,9 +1060,10 @@
             "autoload": {
                 "psr-4": {
                     "CrudApiRestfull\\": "src/",
-                    "CridApiRestfull\\Test\\": "src/Test",
+                    "CrudApiRestfull\\Test\\": "src/Test",
                     "CrudApiRestfull\\Models\\": "src/Models",
                     "CrudApiRestfull\\Services\\": "src/Services",
+                    "CrudApiRestfull\\Middleware\\": "src/Middleware",
                     "CrudApiRestfull\\Controllers\\": "src/Controllers"
                 }
             },
@@ -1081,7 +1082,7 @@
                 "issues": "https://github.com/gvalmana/crud-api-laravel/issues",
                 "source": "https://github.com/gvalmana/crud-api-laravel/tree/master"
             },
-            "time": "2022-05-01T17:02:06+00:00"
+            "time": "2022-05-09T19:13:06+00:00"
         },
         {
             "name": "laravel/framework",
