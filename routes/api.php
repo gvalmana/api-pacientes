@@ -15,10 +15,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
+Route::middleware('oauth')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::apiResource('v1/pacientes', PacienteController::class);
+Route::apiResource('v1/pacientes', PacienteController::class)->middleware('oauth');
 Route::post('v1/pacientes/validate',[PacienteController::class,'validate_model']);
 Route::post('v1/pacientes/update_multiple',[PacienteController::class,'update_multiple']);
