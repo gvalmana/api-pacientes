@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\api\PacienteController;
+use App\Http\Controllers\api\v1\PacienteController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -15,14 +15,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
+Route::middleware('oauth')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-/*Route::get('v1/pacientes',[PacienteController::class,'index']);
-Route::get('v1/pacientes/{paciente}',[PacienteController::class,'show'])->name('show');
-Route::post('v1/pacientes',[PacienteController::class,'store']);
-Route::put('v1/pacientes/{paciente}',[PacienteController::class,'update']);
-Route::delete('v1/pacientes/{paciente}',[PacienteController::class,'destroy']);*/
-
-Route::apiResource('v1/pacientes', PacienteController::class);
+Route::apiResource('v1/pacientes', PacienteController::class)->middleware('oauth');
+Route::post('v1/pacientes/validate',[PacienteController::class,'validate_model']);
+Route::post('v1/pacientes/update_multiple',[PacienteController::class,'update_multiple']);

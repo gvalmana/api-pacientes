@@ -54,7 +54,7 @@ class Handler extends ExceptionHandler
     {
         if ($exception instanceof ModelNotFoundException) {
             return response()->json([
-                'res' => false,
+                'sucess' => false,
                 'error' => 'Modelo no encontrado',
             ], 404);
         }

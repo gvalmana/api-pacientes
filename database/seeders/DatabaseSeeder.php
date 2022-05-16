@@ -2,7 +2,7 @@
 
 namespace Database\Seeders;
 
-use App\Models\Paciente;
+use App\Models\v1\Paciente;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
